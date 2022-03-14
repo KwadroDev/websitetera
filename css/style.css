@@ -264,8 +264,9 @@ a {
 
 @media (min-width: 970px) {
     .about {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
+        align-items: center;
+        text-align: center;
     }
 
     .menu-icon {
@@ -336,14 +337,14 @@ a {
         }
     }
 
-    .main2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5px;
+    .main {
+        display: block;
+        align-items: center;
+        text-align: center;
     }
 
     .imgUnrevealed {
-        margin-top: 200px;
+        margin-top: 20px;
     }
 
     .unrevealed {
