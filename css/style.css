@@ -192,6 +192,7 @@ section {
 .imgUnrevealed {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .gotoup {
@@ -342,7 +343,7 @@ a {
     }
 
     .imgUnrevealed {
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     .unrevealed {
