@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     max-width: 200vh;
     margin: 0 auto;
 }
@@ -95,10 +95,79 @@ body {
     opacity: 85%;
 }
 
+.containerTitle {
+    text-align: center;
+    width: 80%;
+    max-width: 200vh;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.EnEs {
+    text-align: center;
+    display: flex;
+    flex: content;
+    justify-content: center;
+    gap: 15px;
+    font-family: Hubballi, cursive;
+}
+
+.en {
+    color: #333;
+}
+
+.es {
+    color: #333;
+}
+
+.check {
+    position: relative;
+    width: 50px;
+    outline: none;
+    -webkit-appearance: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    border-radius: 25px;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transform: scale(1.1);
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after {
+    left: 25px;
+    border: 2px solid #333;
+}
+
+.check:checked:before {
+    background: rgb(165, 165, 165);
+}
+
 .about {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5%;
+}
+
+.ProjectTitle {
+    margin-top: 5px;
 }
 
 section {
@@ -161,6 +230,25 @@ section {
     perspective: 100px;
 }
 
+.slide-text1 {
+    display: flex;
+    width: calc(208px * 18);
+    animation: text1 40s reverse linear infinite;
+    position: relative;
+}
+
+.slide-text2 {
+    display: flex;
+    width: calc(208px * 18);
+    animation: text2 40s linear infinite;
+    position: relative;
+}
+
+.slide-text h6 {
+    letter-spacing: 2.51px;
+    font-weight: 500;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -171,6 +259,24 @@ section {
 }
 
 @keyframes nft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-208px * 9));
+    }
+}
+
+@keyframes text1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-208px * 9));
+    }
+}
+
+@keyframes text2 {
     0% {
         transform: translateX(0);
     }
@@ -303,6 +409,11 @@ a {
         flex-direction: row;
     }
 
+    .ProjectTitle,
+    .infoSection {
+        text-align: center;
+    }
+
     .slideNFT {
         width: 100%;
     }
@@ -319,6 +430,19 @@ a {
         width: calc(308px * 18);
     }
 
+    .slide-text1 {
+        width: calc(308px * 18);
+    }
+    
+    .slide-text2 {
+        width: calc(308px * 18);
+    }
+
+    .slide-text h6 {
+        letter-spacing: 4.07px;
+        font-size: 18px;
+    }
+
     @keyframes scroll {
         0% {
             transform: translateX(0);
@@ -329,6 +453,24 @@ a {
     }
 
     @keyframes nft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-308px * 9));
+        }
+    }
+
+    @keyframes text1 {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-308px * 9));
+        }
+    }
+
+    @keyframes text2 {
         0% {
             transform: translateX(0);
         }
