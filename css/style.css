@@ -159,7 +159,7 @@ body {
 
 .check:checked:after {
     left: 25px;
-    border: 2px solid #333;
+    /*border: 2px solid #333;*/
 }
 
 .check:checked:before {
