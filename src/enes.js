@@ -5,8 +5,8 @@ function idioma() {
     let id=check.checked;
 
     if (id==true) {
-        location.href="../es.html";
+        location.href="../es";
     } else {
-        location.href="../index.html";
+        location.href="../index";
     }
 }
